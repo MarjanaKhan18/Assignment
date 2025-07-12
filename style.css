@@ -1,0 +1,472 @@
+/* Basic body style */
+body {
+  margin: 0;
+  padding: 0 20px;
+  background-color: #f4f7fe;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0;  /* container padding 0 */
+  box-sizing: border-box;
+}
+
+
+/* Header */
+header {
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-color: #f4f7fe;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+header .signup-btn {
+  background-color: #3d5afe;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+header .signup-btn:hover {
+  background-color: #2b42cb;
+}
+
+/* Banner */
+.banner {
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h1 {
+  font-size: 33px;
+  margin-bottom: 20px;
+}
+
+.banner button {
+  background-color: #3d5afe;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.banner button:hover {
+  background-color: #2b42cb;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    
+    border-radius: 12px;
+    gap: 30px;
+    flex-wrap: wrap; /* রেসপন্সিভ জন্য */
+  }
+
+  .action-left {
+    flex: 1 1 300px;
+    min-width: 300px;
+    text-align: left;
+  }
+
+  .action-left h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111;
+  }
+
+  .action-left p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  .action-left button {
+    background-color: #3d5afe;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .action-left button:hover {
+    background-color: #2b42cb;
+  }
+
+  .action-right {
+    flex: 0 0 250px;
+  }
+
+  .action-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+/* Stats Section */
+.stats {
+  background-color: #edeef1;
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.stats h2 {
+  margin-bottom: 20px;
+}
+
+.stats-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  font-size: 18px;
+}
+
+.stat span {
+  display: block;
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(128, 133, 236);
+}
+
+/* Testimonials Section Styling */
+.testimonials-light {
+  padding: 100px 0; /* Vertical padding */
+  color: rgb(163, 131, 131);
+  text-align: center;
+}
+
+.testimonial-grid-light {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+  justify-content: center; /* Center items if they don't fill the row */
+  gap: 20px;
+}
+
+.testimonial-card-light {
+  display: inline-block;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card-light:hover {
+  transform: translateY(-5px); /* হোভারে হালকা ওপরের দিকে উঠবে */
+}
+
+.testimonial-card-light h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-card-light .review-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555; 
+  margin-bottom: 25px;
+  flex-grow: 1; 
+}
+
+.stars-light {
+  color: #ffb400; 
+  font-size: 24px;
+  margin-bottom: 15px;
+  letter-spacing: 2px; 
+}
+
+/* Feedback Section */
+.feedback {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.feedback h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #433f3f;
+}
+
+.feedback-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.feedback-card {
+  border: 1px solid #fcf8f8;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.feedback-card .stars {
+  color: gold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feedback-card .avatar-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.feedback-card .avatar-text img.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.feedback-card .avatar-text small {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Feedback Call Section */
+.feedback-call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh; 
+  background-color: #f4f7fe;
+  padding: 20px;
+}
+
+.feedback-box {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.text-content h1 {
+  font-size: 32px;
+  color: #3d5afe;
+  margin-bottom: 10px;
+}
+
+.text-content h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-content button {
+  padding: 10px 20px;
+  background-color: #3d5afe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.text-content button:hover {
+  background-color: #2b42cb;
+}
+
+.image-content {
+  margin-top: 20px;
+}
+
+.image-content img {
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+/* Contact Section */
+.contact {
+  display: flex;
+  justify-content: center;   
+  align-items: center;      
+  height: 70vh;             
+  gap: 60px;                 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact-left {
+  font-size: 3rem;         
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  text-align: center;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 490px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.contact-right button {
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-right button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  width: 250%;
+  transform: translateX(-30%);  
+  background-color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div:first-child {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #3d5afe;
+}
+
+footer .links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+footer .links a {
+  color: #191a1f;
+  text-decoration: none;
+}
+  
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .testimonial-grid-light {
+    grid-template-columns: 1fr; 
+  }
+
+  .testimonial-card-light {
+    padding: 25px;
+  }
+
+  .stars-light {
+    font-size: 22px;
+  }
+
+  .testimonial-card-light h3 {
+    font-size: 20px;
+  }
+
+  .testimonial-card-light .review-text {
+    font-size: 15px;
+  }
+
+  .reviewer-avatar-light {
+    width: 40px;
+    height: 40px;
+  }
+
+  .reviewer-name-light {
+    font-size: 15px;
+  }
+
+  .review-date-light {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-card-light {
+    padding: 20px;
+  }
+
+  .stars-light {
+    font-size: 20px;
+  }
+
+  .testimonial-card-light h3 {
+    font-size: 18px;
+  }
+}
